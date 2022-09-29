@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.3a6f0b38.chunk.css",
+    "main.js": "./static/js/main.5d9dd4b4.chunk.js",
+    "main.js.map": "./static/js/main.5d9dd4b4.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.5ce4edf6.js",
+    "runtime-main.js.map": "./static/js/runtime-main.5ce4edf6.js.map",
+    "static/js/2.2f1569bd.chunk.js": "./static/js/2.2f1569bd.chunk.js",
+    "static/js/2.2f1569bd.chunk.js.map": "./static/js/2.2f1569bd.chunk.js.map",
+    "static/js/3.6c36bfcd.chunk.js": "./static/js/3.6c36bfcd.chunk.js",
+    "static/js/3.6c36bfcd.chunk.js.map": "./static/js/3.6c36bfcd.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.3a6f0b38.chunk.css.map": "./static/css/main.3a6f0b38.chunk.css.map",
+    "static/js/2.2f1569bd.chunk.js.LICENSE.txt": "./static/js/2.2f1569bd.chunk.js.LICENSE.txt",
+    "static/media/Pipe 14.e50c7d99.png": "./static/media/Pipe 14.e50c7d99.png",
+    "static/media/reset.css": "./static/media/bayon-v29-latin-regular.cf4f5d4e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ce4edf6.js",
+    "static/js/2.2f1569bd.chunk.js",
+    "static/css/main.3a6f0b38.chunk.css",
+    "static/js/main.5d9dd4b4.chunk.js"
+  ]
+}
