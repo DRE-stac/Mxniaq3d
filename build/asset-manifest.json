@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.d68ca107.chunk.css",
+    "main.js": "./static/js/main.0f8aa097.chunk.js",
+    "main.js.map": "./static/js/main.0f8aa097.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.5ce4edf6.js",
+    "runtime-main.js.map": "./static/js/runtime-main.5ce4edf6.js.map",
+    "static/js/2.2f1569bd.chunk.js": "./static/js/2.2f1569bd.chunk.js",
+    "static/js/2.2f1569bd.chunk.js.map": "./static/js/2.2f1569bd.chunk.js.map",
+    "static/js/3.6c36bfcd.chunk.js": "./static/js/3.6c36bfcd.chunk.js",
+    "static/js/3.6c36bfcd.chunk.js.map": "./static/js/3.6c36bfcd.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.d68ca107.chunk.css.map": "./static/css/main.d68ca107.chunk.css.map",
+    "static/js/2.2f1569bd.chunk.js.LICENSE.txt": "./static/js/2.2f1569bd.chunk.js.LICENSE.txt",
+    "static/media/Pipe 14.e50c7d99.png": "./static/media/Pipe 14.e50c7d99.png",
+    "static/media/Sole1.bee804e7.jpeg": "./static/media/Sole1.bee804e7.jpeg",
+    "static/media/reset.css": "./static/media/kodchasan-v16-latin-700.c7cb65b7.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ce4edf6.js",
+    "static/js/2.2f1569bd.chunk.js",
+    "static/css/main.d68ca107.chunk.css",
+    "static/js/main.0f8aa097.chunk.js"
+  ]
+}
