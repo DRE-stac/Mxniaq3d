@@ -126,7 +126,7 @@ table {
 @font-face {
   font-family: "coder";
   src: local("coder"),
-    url(../assets/fonts/bayon-v29-latin-regular.woff) format("woff");
+    url(../assets/fonts/kodchasan-v16-latin-700.woff) format("woff");
 }
 
 body {

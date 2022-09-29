@@ -5,6 +5,7 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import i1 from "./assets/images/Pipe 14.png";
+import i2 from "./assets/images/Sole1.jpeg";
 import { Widget } from '@maticnetwork/wallet-widget'
 import ContactForm from "./ContactForm";
 
@@ -31,23 +32,23 @@ export const StyledButton = styled.button`
   }
 `;
 export const StyledButton2 = styled.button`
-  padding: 10px;
-  border-radius: 50px;
-  border: none;
-  background-color: #ffffff;
-  padding: 10px;
-  font-weight: bold;
-  color: #000000;
-  width: 85px;
-  cursor: pointer;
-  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  :active {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-  }
+padding: 10px;
+border-radius: 50px;
+border: none;
+background-color: #64ee85;
+padding: 10px;
+font-weight: bold;
+color: #000000;
+width: 100px;
+cursor: pointer;
+box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+-webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+-moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+:active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
 `;
 export const StyledButton3 = styled.button`
   padding: 10px;
@@ -239,7 +240,18 @@ export const StyledImg = styled.img`
   width: 600px;
   height: 600px;
   @media (min-width: 767px) {
-    width: 400px;
+    width: 200px;
+    height: 125px;
+  }
+  transition: width 0.5s;
+  transition: height 0.5s;
+`;
+
+export const StyledImg2 = styled.img`
+  width: 600px;
+  height: 600px;
+  @media (min-width: 767px) {
+    width: 250px;
     height: 250px;
   }
   transition: width 0.5s;
@@ -263,15 +275,16 @@ export const StyledImg = styled.img`
     if (_amount <= 0) {
       return;
     }
-    setFeedback("Cooking the product");
+    if (_amount == 1) {
+      setFeedback("Cooking the product");
     setClaimingNft(true);
       blockchain.smartContract.methods
-      .WebMint(_amount, "https://gateway.pinata.cloud/ipfs/QmTjDiwPQvWsEaCtCTcXiXeUUxnhF9QwV85iZ2GSXRDV4E/1.json")
+      .WebMint(1, "https://gateway.pinata.cloud/ipfs/QmTjDiwPQvWsEaCtCTcXiXeUUxnhF9QwV85iZ2GSXRDV4E/1.json")
       .send({
         gasLimit: "500000",
         to: "0xBC5d1aF69b2c35aA6Ef79543e77b23a629e3c938",
         from: blockchain.account,
-        value: blockchain.web3.utils.toWei((0.001 * _amount).toString(), "ether"),
+        value: blockchain.web3.utils.toWei((1).toString(), "ether"),
       })
       .once("error", (err) => {
         console.log(err);
@@ -285,6 +298,79 @@ export const StyledImg = styled.img`
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
       });
+    }
+    else if (_amount == 2) {
+      setFeedback("Cooking the product");
+    setClaimingNft(true);
+      blockchain.smartContract.methods
+      .WebMint(1, "https://gateway.pinata.cloud/ipfs/QmWJPFzk5wndintbzT41yzwaXohfp5djGrQgSsELoKJvwm/2.json")
+      .send({
+        gasLimit: "500000",
+        to: "0xBC5d1aF69b2c35aA6Ef79543e77b23a629e3c938",
+        from: blockchain.account,
+        value: blockchain.web3.utils.toWei((1).toString(), "ether"),
+      })
+      .once("error", (err) => {
+        console.log(err);
+        setFeedback("Sorry, something went wrong please try again later.");
+        setClaimingNft(false);
+      })
+      .then((receipt) => {
+        setFeedback(
+          "You've got your pair!"
+        );
+        setClaimingNft(false);
+        dispatch(fetchData(blockchain.account));
+      });
+    }
+    else if (_amount == 3) {
+      setFeedback("Cooking the product");
+    setClaimingNft(true);
+      blockchain.smartContract.methods
+      .WebMint(1, "https://gateway.pinata.cloud/ipfs/QmTjDiwPQvWsEaCtCTcXiXeUUxnhF9QwV85iZ2GSXRDV4E/1.json")
+      .send({
+        gasLimit: "500000",
+        to: "0xBC5d1aF69b2c35aA6Ef79543e77b23a629e3c938",
+        from: blockchain.account,
+        value: blockchain.web3.utils.toWei((1).toString(), "ether"),
+      })
+      .once("error", (err) => {
+        console.log(err);
+        setFeedback("Sorry, something went wrong please try again later.");
+        setClaimingNft(false);
+      })
+      .then((receipt) => {
+        setFeedback(
+          "You've got your pair!"
+        );
+        setClaimingNft(false);
+        dispatch(fetchData(blockchain.account));
+      });
+    }
+    else if (_amount == 4) {
+      setFeedback("Cooking the product");
+    setClaimingNft(true);
+      blockchain.smartContract.methods
+      .WebMint(1, "https://gateway.pinata.cloud/ipfs/QmTjDiwPQvWsEaCtCTcXiXeUUxnhF9QwV85iZ2GSXRDV4E/1.json")
+      .send({
+        gasLimit: "500000",
+        to: "0xBC5d1aF69b2c35aA6Ef79543e77b23a629e3c938",
+        from: blockchain.account,
+        value: blockchain.web3.utils.toWei((1).toString(), "ether"),
+      })
+      .once("error", (err) => {
+        console.log(err);
+        setFeedback("Sorry, something went wrong please try again later.");
+        setClaimingNft(false);
+      })
+      .then((receipt) => {
+        setFeedback(
+          "You've got your pair!"
+        );
+        setClaimingNft(false);
+        dispatch(fetchData(blockchain.account));
+      });
+    }
   };
 
 
@@ -383,7 +469,32 @@ export const StyledImg = styled.img`
                   Smoker's Pipe
                 </s.TextTitle> 
                 <StyledImg alt={"example"} src={i1} />
-                                              
+                <StyledButton
+                      disabled={claimingNft ? 1 : 0}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        claimNFTs(1);
+                        getData();
+                        
+                      }}
+                    >
+                      {claimingNft ? "BUSY" : "Get Pipe"}
+                    </StyledButton>
+                <s.TextTitle style={{ textAlign: "center" }}>
+                  Voron.N.01 Sole
+                </s.TextTitle> 
+                <StyledImg2 alt={"example"} src={i2} />
+                <StyledButton2
+                      disabled={claimingNft ? 1 : 0}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        claimNFTs(2);
+                        getData();
+                        
+                      }}
+                    >
+                      {claimingNft ? "BUSY" : "Get Shoe Sole"}
+                    </StyledButton2>                              
                 <s.SpacerXSmall />
                 
                 <s.TextDescription style={{ textAlign: "center" }}>
@@ -418,17 +529,8 @@ export const StyledImg = styled.img`
                   </s.Container>
                 ) : (
                   <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                    <StyledButton
-                      disabled={claimingNft ? 1 : 0}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        claimNFTs(1);
-                        getData();
-                        
-                      }}
-                    >
-                      {claimingNft ? "BUSY" : "Get Yours!"}
-                    </StyledButton>
+                    
+                    
                   </s.Container>
 
                 )}
